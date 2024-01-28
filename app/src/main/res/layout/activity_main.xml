@@ -16,6 +16,13 @@
 
 <!--    </RelativeLayout>-->
 
+    <TextView
+        android:text="header info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/button4"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_plimovanje" />
+
 
     <ScrollView
         android:hapticFeedbackEnabled="false"
@@ -23,8 +30,10 @@
         android:layout_height="fill_parent"
         android:id="@+id/scrollView" >
 
+
         <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="90.0dip" android:paddingRight="30.0dip"  android:paddingBottom="20dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <EditText android:id="@+id/button4"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_plimovanje" />
+
+
             <EditText android:id="@+id/button1"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_trenutni_podatki" />
             <EditText android:id="@+id/button5"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_video" />
             <EditText android:id="@+id/button2"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_mbp" />
