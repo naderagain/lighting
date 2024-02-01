@@ -7,22 +7,38 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.testscroll.R
+import com.example.testscroll.data.db.entity.User
+import com.example.testscroll.databinding.FragmentUsersListBinding
 import com.example.testscroll.ui.userdetails.UserDetailsViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class UsersListFragment : Fragment() {
     val viewModel: UsersListViewModel by viewModels()
+    lateinit var binding: FragmentUsersListBinding
+    val usersAdapter = UsersAdapter()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        viewModel.repository.getAllUsers().observe(this) {
+            usersAdapter.addUsers(it)
+        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        binding = FragmentUsersListBinding.inflate(inflater, container, false)
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = this
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_users_list, container, false)
+        return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.rvUsers.adapter=usersAdapter
+    }
     companion object {
         /**
          * Use this factory method to create a new instance of

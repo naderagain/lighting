@@ -41,8 +41,5 @@ class UsersAdapter : Adapter<UsersAdapter.UserViewHolder>() {
         holder.bind(usersList[position])
     }
 
-    @BindingAdapter("app:profileImage")
-    fun ImageView.profileImage(url: String) {
-        Glide.with(this).asBitmap().load(url).into(this)
-    }
+
 }
