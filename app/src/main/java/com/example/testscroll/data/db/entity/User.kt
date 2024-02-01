@@ -8,8 +8,8 @@ import kotlinx.parcelize.Parcelize
 @Entity(tableName = "users")
 @Parcelize
 data class User(
-    @PrimaryKey(autoGenerate = true)
-    var id: Int,
+    @PrimaryKey
+    var userId: Int,
     var profileImage: String,
     var userName: String,
     var email: String,

@@ -13,6 +13,7 @@ class AppMain : Application() {
     }
 
 
+
     companion object {
         lateinit var instance: AppMain
     }
