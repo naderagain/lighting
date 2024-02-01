@@ -6,49 +6,4 @@
     android:paddingRight="16dp"
     android:orientation="vertical" >
 
-<!--    <RelativeLayout-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content">-->
-<!--        <EditText-->
-
-<!--            android:id="@+id/button0"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_veter"  />-->
-
-
-<!--    </RelativeLayout>-->
-
-    <TextView
-        android:text="header info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/button4"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_plimovanje" />
-
-
-    <ScrollView
-        android:hapticFeedbackEnabled="false"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/scrollView" >
-
-
-        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingTop="90.0dip" android:paddingRight="30.0dip"  android:paddingBottom="20dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
-
-
-            <EditText android:id="@+id/button1"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_trenutni_podatki" />
-            <EditText android:id="@+id/button5"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_video" />
-            <EditText android:id="@+id/button2"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_mbp" />
-            <EditText android:id="@+id/button10"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_wsg"/>
-            <EditText android:id="@+id/button11"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_ath" />
-            <EditText android:id="@+id/button12"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_sts" />
-            <EditText android:id="@+id/button13"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_w" />
-            <EditText android:id="@+id/button14"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_dotb" />
-            <EditText android:id="@+id/button15"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_ast" />
-            <EditText android:id="@+id/button16"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/gumb_caw" />
-            <EditText android:id="@+id/buttdon17"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/4fer45" />
-            <EditText android:id="@+id/buttoqn16"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/2" />
-            <EditText android:id="@+id/bduttdon17"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="string/1" />
-
-
-        </LinearLayout>
-    </ScrollView>
 </LinearLayout>
