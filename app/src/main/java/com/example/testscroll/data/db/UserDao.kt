@@ -9,7 +9,7 @@ import com.example.testscroll.data.db.entity.User
 
 @Dao
 interface UserDao {
-    @Insert(onConflict = OnConflictStrategy.ABORT)
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addUser(user: User)
 
     @Query("SELECT * FROM users")
